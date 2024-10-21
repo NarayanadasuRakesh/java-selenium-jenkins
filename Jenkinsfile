@@ -1,18 +1,8 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3' // Assuming Maven is installed with name 'Maven3' in Jenkins
-        jdk 'JDK11' // Assuming JDK 11 is configured in Jenkins
-    }
 
     stages {
-//        stage('Checkout') {
-//            steps {
-                // Checkout the source code from your version control system (e.g., Git)
-//                checkout scm
-//            }
-        }
         stage('Install Dependencies') {
             steps {
                 // Clean and install the project dependencies
